@@ -12,7 +12,6 @@ Group:		Video
 License:	GPL
 URL:		http://www.rst38.org.uk/vdr/decruft/
 Source:		http://www.rst38.org.uk/vdr/decruft/vdr-%plugin-%version.tar.bz2
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.4.1-6
 Requires:	vdr-abi = %vdr_abi
 
