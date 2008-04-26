@@ -2,7 +2,7 @@
 %define plugin	decruft
 %define name	vdr-plugin-%plugin
 %define version	0.0.4
-%define rel	8
+%define rel	9
 
 Summary:	VDR plugin: Remove the cruft from your channels
 Name:		%name
@@ -12,8 +12,9 @@ Group:		Video
 License:	GPL
 URL:		http://www.rst38.org.uk/vdr/decruft/
 Source:		http://www.rst38.org.uk/vdr/decruft/vdr-%plugin-%version.tar.bz2
+Patch0:		02_avoid-vdr-patch.dpatch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	vdr-devel >= 1.4.1-6
+BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
 %description
@@ -23,6 +24,8 @@ groups.
 
 %prep
 %setup -q -n %plugin-%version
+%patch0 -p1
+%vdr_plugin_prep
 rm -r examples/CVS
 
 %build
