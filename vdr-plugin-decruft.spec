@@ -3,7 +3,7 @@
 Summary:	VDR plugin: Remove the cruft from your channels
 Name:		vdr-plugin-%plugin
 Version:	0.0.4
-Release:	13
+Release:	14
 Group:		Video
 License:	GPL
 URL:		http://www.rst38.org.uk/vdr/decruft/
