@@ -9,6 +9,7 @@ License:	GPL
 URL:		http://www.rst38.org.uk/vdr/decruft/
 Source:		http://www.rst38.org.uk/vdr/decruft/vdr-%plugin-%{version}.tgz
 Patch0:		02_avoid-vdr-patch.dpatch
+Patch1:		vdr-decruft-0.0.4_compile.patch
 BuildRequires:	vdr-devel >= 1.6.0
 Requires:	vdr-abi = %vdr_abi
 
@@ -20,6 +21,7 @@ groups.
 %prep
 %setup -q -n %plugin-%{version}
 %patch0 -p1
+%patch1 -p1
 %vdr_plugin_prep
 rm -r examples/CVS
 
