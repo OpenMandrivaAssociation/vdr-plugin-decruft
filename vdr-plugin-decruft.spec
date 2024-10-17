@@ -6,7 +6,7 @@ Version:	0.0.4
 Release:	17
 Group:		Video
 License:	GPL
-URL:		http://www.rst38.org.uk/vdr/decruft/
+URL:		https://www.rst38.org.uk/vdr/decruft/
 Source:		http://www.rst38.org.uk/vdr/decruft/vdr-%plugin-%{version}.tgz
 Patch0:		02_avoid-vdr-patch.dpatch
 Patch1:		vdr-decruft-0.0.4_compile.patch
